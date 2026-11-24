@@ -1,0 +1,19 @@
+{
+  "name": "enterprise-banking-backend",
+  "version": "1.0.0",
+  "description": "Highly Scalable Banking System Backend",
+  "main": "gateway.js",
+  "scripts": {
+    "start": "concurrently \"node gateway.js\" \"node account-service.js\" \"node card-service.js\" \"node loan-service.js\" \"node transaction-service.js\""
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^3.0.0",
+    "sqlite3": "^5.1.7",
+    "uuid": "^9.0.1"
+  }
+}
